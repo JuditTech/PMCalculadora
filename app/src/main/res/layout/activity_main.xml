@@ -5,17 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDFDFD"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#476664">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar2"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@color/black"
+            android:backgroundTint="#253331"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,19 +27,21 @@
 
         <Button
             android:id="@+id/button31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
             android:layout_marginEnd="68dp"
-            android:text="Button"
+            android:backgroundTint="#62366A"
+            android:text="Salir"
             app:layout_constraintEnd_toEndOf="@+id/toolbar2"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="86dp"
+            android:layout_height="56dp"
             android:layout_marginStart="68dp"
-            android:text="Button"
+            android:backgroundTint="#62366A"
+            android:text="Reset"
             app:layout_constraintStart_toStartOf="@+id/toolbar2"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,14 +52,15 @@
             android:layout_marginTop="8dp"
             android:text="CALCULADORA"
             android:textAlignment="gravity"
+            android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="321dp"
-            android:layout_height="316dp"
+            android:layout_width="354dp"
+            android:layout_height="396dp"
             android:layout_marginTop="7dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +69,7 @@
             <TableLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +78,7 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -82,28 +89,36 @@
                             android:id="@+id/button38"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="7" />
 
                         <Button
                             android:id="@+id/button39"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="8" />
 
                         <Button
                             android:id="@+id/button41"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="9" />
 
                         <Button
                             android:id="@+id/button40"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text=":" />
                     </LinearLayout>
 
@@ -112,7 +127,7 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -123,28 +138,36 @@
                             android:id="@+id/button38"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="4" />
 
                         <Button
                             android:id="@+id/button39"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="5" />
 
                         <Button
                             android:id="@+id/button41"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="6" />
 
                         <Button
                             android:id="@+id/button40"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text="X" />
                     </LinearLayout>
                 </TableRow>
@@ -152,7 +175,7 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -163,28 +186,36 @@
                             android:id="@+id/button38"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="1" />
 
                         <Button
                             android:id="@+id/button39"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="2" />
 
                         <Button
                             android:id="@+id/button41"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#253331"
                             android:text="3" />
 
                         <Button
                             android:id="@+id/button40"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text="-" />
                     </LinearLayout>
                 </TableRow>
@@ -192,7 +223,7 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -203,28 +234,36 @@
                             android:id="@+id/button38"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text="0" />
 
                         <Button
                             android:id="@+id/button39"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text="." />
 
                         <Button
                             android:id="@+id/button41"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text="=" />
 
                         <Button
                             android:id="@+id/button40"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_margin="3dp"
                             android:layout_weight="1"
+                            android:backgroundTint="#294359"
                             android:text="+" />
                     </LinearLayout>
                 </TableRow>
@@ -232,29 +271,76 @@
 
             <Button
                 android:id="@+id/button33"
-                android:layout_width="92dp"
-                android:layout_height="47dp"
+                android:layout_width="73dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#6D1E18"
                 android:text="CE"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:padding="2dp"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FDFDFD"
+                android:paddingLeft="5dp"
+                android:paddingEnd="5dp"
                 android:text="0"
                 android:textAlignment="gravity"
+                android:textColor="@color/black"
                 android:textDirection="rtl"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="@+id/button33"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.99"
                 app:layout_constraintStart_toEndOf="@+id/button33"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button33"
                 app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>
